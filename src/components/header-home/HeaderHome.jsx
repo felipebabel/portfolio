@@ -10,7 +10,7 @@ export default function HeaderHome({ config, toggleLanguageModal }) {
           <div className={styles.infoHome}>
             <p>Bachelor's degree in Information Systems</p>
             <p>3 years of professional experience</p>
-            <p className={styles.toeic} onClick={() => window.open("/assets/images/english_toeic.png", "_blank")}>TOEIC English Certificate</p>
+            <p className={styles.toeic}   onClick={() => window.open(`${process.env.PUBLIC_URL}/assets/images/english_toeic.png`, "_blank")}>TOEIC English Certificate</p>
           </div>
           <div className={styles.column}>
             <div className={styles.socials}>
@@ -26,7 +26,7 @@ export default function HeaderHome({ config, toggleLanguageModal }) {
         </div>
       </div>
       <div className={styles.image} id="imageprofile">
-        <img src="/assets/images/profile.png" alt="Felipe Babel" />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/profile.png`} alt="Felipe Babel" />
       </div>
     </header>
   );

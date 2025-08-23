@@ -53,7 +53,7 @@ export default function Experiences() {
             <div className="content">
               <div className="flex-container" style={{ display: 'flex', gap: '1rem' }}>
                 <div className={styles.navLogoPhilips}>
-                  <img src={exp.logoSrc} alt={exp.logoAlt} />
+                  <img src={`${process.env.PUBLIC_URL}${exp.logoSrc}`} alt={exp.logoAlt} />
                 </div>
                 <div className={styles.text}>
                   <p className={styles.cardParagraph}>{exp.role}</p>

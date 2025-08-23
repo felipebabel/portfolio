@@ -9,7 +9,7 @@ export default function Navbar({ menuOpen, toggleMenu, closeMenu }) {
     <nav className={styles.nav}>
       <div className={styles.logo}>
         <a href="#top">
-          <img src="/assets/images/logo_bold.jpg" alt="Logo Felipe Babel" />
+          <img src={`${process.env.PUBLIC_URL}/assets/images/logo_bold.jpg`} alt="Logo Felipe Babel" />
         </a>
       </div>
 

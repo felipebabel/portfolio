@@ -28,7 +28,7 @@ function App() {
       language === "pt"
         ? "cv_felipe_babel_pt.pdf"
         : "cv_felipe_babel_en.pdf";
-    const filePath = `/assets/docs/${fileName}`;
+    const filePath = `${process.env.PUBLIC_URL}/assets/docs/${fileName}`;
     const link = document.createElement("a");
     link.href = filePath;
     link.download = fileName;
