@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio-refactor/static/css/main.c3736779.css",
-    "main.js": "/portfolio-refactor/static/js/main.e93328e8.js",
-    "static/js/453.86042eab.chunk.js": "/portfolio-refactor/static/js/453.86042eab.chunk.js",
-    "static/media/devicon.svg?qd25fp": "/portfolio-refactor/static/media/devicon.10e33a3796c872bc312e.svg",
-    "static/media/remixicon.svg?t=1734404658139": "/portfolio-refactor/static/media/remixicon.df9902a6df13645438e1.svg",
-    "static/media/devicon.eot?qd25fp": "/portfolio-refactor/static/media/devicon.bb0c9256aeb8aecf3ba6.eot",
-    "static/media/devicon.woff?qd25fp": "/portfolio-refactor/static/media/devicon.e4d86e063cb00ba23862.woff",
-    "static/media/devicon.ttf?qd25fp": "/portfolio-refactor/static/media/devicon.685a2d4fcee813854715.ttf",
-    "static/media/remixicon.eot?t=1734404658139": "/portfolio-refactor/static/media/remixicon.29066d810a74e994be27.eot",
-    "static/media/remixicon.ttf?t=1734404658139": "/portfolio-refactor/static/media/remixicon.868d1a768f4762dbcc3e.ttf",
-    "static/media/remixicon.woff?t=1734404658139": "/portfolio-refactor/static/media/remixicon.ce82bb240fef24f93f95.woff",
-    "static/media/remixicon.woff2?t=1734404658139": "/portfolio-refactor/static/media/remixicon.bb211d855a1864aa5b67.woff2",
-    "static/media/fa-solid-900.woff2": "/portfolio-refactor/static/media/fa-solid-900.f54756da1f3d1b88887f.woff2",
-    "static/media/fa-brands-400.woff2": "/portfolio-refactor/static/media/fa-brands-400.1f6bad931d92a0a52c45.woff2",
-    "static/media/fa-regular-400.woff2": "/portfolio-refactor/static/media/fa-regular-400.5632c43107f4d3fa4806.woff2",
-    "static/media/fa-v4compatibility.woff2": "/portfolio-refactor/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
-    "index.html": "/portfolio-refactor/index.html",
-    "main.c3736779.css.map": "/portfolio-refactor/static/css/main.c3736779.css.map",
-    "main.e93328e8.js.map": "/portfolio-refactor/static/js/main.e93328e8.js.map",
-    "453.86042eab.chunk.js.map": "/portfolio-refactor/static/js/453.86042eab.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.21a036bb.css",
+    "main.js": "/portfolio/static/js/main.9b931dd9.js",
+    "static/js/453.ad7768ec.chunk.js": "/portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/devicon.svg?qd25fp": "/portfolio/static/media/devicon.10e33a3796c872bc312e.svg",
+    "static/media/remixicon.svg?t=1734404658139": "/portfolio/static/media/remixicon.df9902a6df13645438e1.svg",
+    "static/media/devicon.eot?qd25fp": "/portfolio/static/media/devicon.bb0c9256aeb8aecf3ba6.eot",
+    "static/media/devicon.woff?qd25fp": "/portfolio/static/media/devicon.e4d86e063cb00ba23862.woff",
+    "static/media/devicon.ttf?qd25fp": "/portfolio/static/media/devicon.685a2d4fcee813854715.ttf",
+    "static/media/remixicon.eot?t=1734404658139": "/portfolio/static/media/remixicon.29066d810a74e994be27.eot",
+    "static/media/remixicon.ttf?t=1734404658139": "/portfolio/static/media/remixicon.868d1a768f4762dbcc3e.ttf",
+    "static/media/remixicon.woff?t=1734404658139": "/portfolio/static/media/remixicon.ce82bb240fef24f93f95.woff",
+    "static/media/remixicon.woff2?t=1734404658139": "/portfolio/static/media/remixicon.bb211d855a1864aa5b67.woff2",
+    "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.f54756da1f3d1b88887f.woff2",
+    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.1f6bad931d92a0a52c45.woff2",
+    "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.5632c43107f4d3fa4806.woff2",
+    "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.21a036bb.css.map": "/portfolio/static/css/main.21a036bb.css.map",
+    "main.9b931dd9.js.map": "/portfolio/static/js/main.9b931dd9.js.map",
+    "453.ad7768ec.chunk.js.map": "/portfolio/static/js/453.ad7768ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3736779.css",
-    "static/js/main.e93328e8.js"
+    "static/css/main.21a036bb.css",
+    "static/js/main.9b931dd9.js"
   ]
 }
