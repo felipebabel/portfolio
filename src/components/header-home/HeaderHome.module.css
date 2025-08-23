@@ -1,0 +1,106 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20rem;
+  margin-top: 5rem;
+}
+
+.content {
+  flex: 1 1 50%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(255, 127, 38);
+}
+
+.job {
+  font-size: 3rem;
+  color: white;
+}
+
+.infoHome p,
+.infoHome a {
+  color: #eee;
+  margin: 0.25rem 0;
+  margin-top: 2rem;
+}
+
+.column {
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn {
+  background-color: #1d4ed8;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.image {
+  flex: 1 1 50%;
+  max-width: 1400px;
+  margin-top: 3rem;
+}
+
+.image img {
+  width: 100%;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socials a {
+  color: #fff;
+  background-color: #1d4ed8;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  background-color: #1e40af;
+  transition: all 0.3s ease;
+}
+
+.toeic:hover {
+  cursor: pointer;
+  color: rgb(255, 127, 38);
+  transition: all 0.3s ease;
+}

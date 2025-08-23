@@ -1,0 +1,71 @@
+.experiences {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.card {
+  padding: 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: #323232;
+  border-color: rgb(255, 127, 38);
+}
+
+.cardParagraph {
+  user-select: none;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.headerexperiences {
+  color: white;
+  margin-top: 5rem;
+}
+
+.list {
+  list-style: none; 
+  padding-left: 0;
+}
+
+.listItem {
+  position: relative;
+  padding-left: 1.5rem; 
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.listItem::before {
+  content: '→'; 
+  position: absolute;
+  left: 0;
+  color: rgb(255, 127, 38); 
+  font-weight: bold;
+}
+
+.navLogoPhilips img {
+  width: 150px;
+  height: auto;
+  display: block;
+}

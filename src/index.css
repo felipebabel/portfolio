@@ -1,0 +1,12 @@
+body {
+    background-color: #18181B;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}

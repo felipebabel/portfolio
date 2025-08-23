@@ -1,0 +1,134 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #27272a;
+  z-index: 1000; 
+  box-sizing: border-box;
+}
+
+.logo img {
+  margin: 0.5rem;
+  height:55px;
+}
+
+/* Desktop menu */
+.navLinks {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.link a {
+  position: relative;
+  color:#fff;
+  display: inline-block; /* <-- faz o a ter só o tamanho do texto */
+  text-decoration: none;
+}
+
+.link a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  bottom: -10px;
+  left: 0;
+  background-color: rgb(255, 127, 38);
+  transition: width 0.3s ease;
+}
+
+.link a:hover::after {
+  width: 100%; /* agora só embaixo do texto */
+}
+
+.btnMenu {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9;
+}
+
+.showOverlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hideOverlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.navLinksMobile {
+  position: fixed;
+  top: 0; right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #27272a;
+  padding: 2rem 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+.hideMenu {
+  transform: translateX(100%);
+}
+
+.btnClose {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.linkMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .btnMenu {
+    display: block;
+  }
+}
