@@ -1,3 +1,12 @@
+## Mid-Level Software Engineer 
+**period:** 2026 - currently
+**logo:** /assets/images/senior.png
+**logoAlt:** Senior Logo
+
+As a software engineer, I am responsible for developing ERP systems within the Brazilian fiscal landscape. My focus is on building cloud-native microservices with Java and Spring Boot.
+
+---
+
 ## Entry Level Software Engineer - Philips
 **period:** 2022 - 2026
 **logo:** /assets/images/philips.jpeg
