@@ -18,6 +18,10 @@
   border-radius: 15px;
   transition: all 0.3s ease;
   align-items: center;
+  width: 100%;
+  max-width: 90rem;
+  will-change: transform, opacity;
+  backface-visibility: hidden; 
 }
 
 .card:hover {
@@ -26,7 +30,6 @@
 }
 
 .cardParagraph {
-  user-select: none;
   color: #fff;
   margin-bottom: 0.75rem;
   text-align: justify;
@@ -42,30 +45,61 @@
 .headerexperiences {
   color: white;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .list {
-  list-style: none; 
+  list-style: none;
   padding-left: 0;
 }
 
 .listItem {
   position: relative;
-  padding-left: 1.5rem; 
+  padding-left: 1.5rem;
   margin-bottom: 0.5rem;
   color: #fff;
 }
 
 .listItem::before {
-  content: '→'; 
+  content: '→';
   position: absolute;
   left: 0;
-  color: rgb(255, 127, 38); 
+  color: rgb(255, 127, 38);
   font-weight: bold;
 }
 
 .navLogoPhilips img {
-  width: 150px;
+  width: 120px;
   height: auto;
   display: block;
+}
+
+.flexContainer {
+  display: flex;
+  align-items: flex-start; 
+  gap: 1rem;
+}
+@media (max-width: 1400px) {
+  .experiences {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  }
+
+}
+
+
+
+@media (max-width: 768px) {
+  .experiences {
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .navLogoPhilips img {
+    display: none;
+  }
 }

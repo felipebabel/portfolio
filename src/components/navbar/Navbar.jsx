@@ -1,60 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import styles from "./Navbar.module.css";
+import { navbarVariants } from "./NavbarAnimations";
+import { navbarLinks } from "./navbarLinks";
+import NavLink from "./NavLink";
+import MobileMenu from "./MobileMenu";
+import HamburgerButton from "./HamburgerButton";
 
-export default function Navbar({ menuOpen, toggleMenu, closeMenu }) {
-  const handleMenuLinkClick = () => closeMenu();
-  const handleOverlayClick = () => closeMenu();
+
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
+const scrollToSection = (id) => {
+  if (id === "top") {
+    document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    const section = document.getElementById(id);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+  }
+    closeMenu();
+  };
 
   return (
     <nav className={styles.nav}>
-      <div className={styles.logo}>
-        <a href="#top">
-          <img src={`${process.env.PUBLIC_URL}/assets/images/logo_bold.jpg`} alt="Logo Felipe Babel" />
-        </a>
-      </div>
+      <motion.div
+        className={styles.logo}
+        initial="hidden"
+        animate="visible"
+        variants={navbarVariants.logo}
+      >
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/logo_bold.jpg`}
+          alt="Logo Felipe Babel"
+          onClick={() => scrollToSection("top")}
+          style={{ cursor: "pointer" }}
+        />
+      </motion.div>
 
-      <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-        <li className={styles.link} onClick={handleMenuLinkClick}>
-          <a href="#top">Home</a>
-        </li>
-        <li className={styles.link} onClick={handleMenuLinkClick}>
-          <a href="#aboutme">About me</a>
-        </li>
-        <li className={styles.link} onClick={handleMenuLinkClick}>
-          <a href="#skills">Skills</a>
-        </li>
-        <li className={styles.link} onClick={handleMenuLinkClick}>
-          <a href="#experiences">Experiences</a>
-        </li>
+      <ul className={styles.navLinks}>
+        {navbarLinks.map((link, i) => (
+          <NavLink
+            key={link.name}
+            name={link.name}
+            id={link.id}
+            index={i}
+            onClick={scrollToSection}
+          />
+        ))}
       </ul>
 
-      <button className={styles.btnMenu} onClick={toggleMenu} aria-label="Toggle menu">
-        <i className="bx bx-menu"></i>
-      </button>
+      <HamburgerButton menuOpen={menuOpen} toggleMenu={toggleMenu} />
 
-      {/* Mobile Menu */}
-      <div
-        className={`${styles.overlay} ${menuOpen ? styles.showOverlay : styles.hideOverlay}`}
-        onClick={handleOverlayClick}
-      ></div>
 
-      <ul className={`${styles.navLinksMobile} ${menuOpen ? styles.showMenu : styles.hideMenu}`}>
-        <button className={styles.btnClose} onClick={closeMenu} aria-label="Close menu">
-          <i className="ri-close-line"></i>
-        </button>
-        <li className={styles.linkMenu} onClick={handleMenuLinkClick}>
-          <a href="#top">Home</a>
-        </li>
-        <li className={styles.linkMenu} onClick={handleMenuLinkClick}>
-          <a href="#aboutme">About me</a>
-        </li>
-        <li className={styles.linkMenu} onClick={handleMenuLinkClick}>
-          <a href="#skills">Skills</a>
-        </li>
-        <li className={styles.linkMenu} onClick={handleMenuLinkClick}>
-          <a href="#experiences">Experiences</a>
-        </li>
-      </ul>
+      <MobileMenu
+        menuOpen={menuOpen}
+        closeMenu={closeMenu}
+        links={navbarLinks}
+        scrollToSection={scrollToSection}
+      />
     </nav>
   );
 }

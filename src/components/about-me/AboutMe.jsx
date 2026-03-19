@@ -1,37 +1,41 @@
+import { motion } from "framer-motion";
+import { fadeInDown, fadeInUpContainer, fadeInUpItem } from "./animation";
 import styles from "./aboutme.module.css";
+import { useMarkdownData } from "../../hooks/useMarkdownData";
+import { parseAbout } from "../../services/parsers";
 
 export default function AboutMe() {
+  const { data: paragraphs } = useMarkdownData("about", parseAbout, []);
+
   return (
-    <section
-      className={styles.container}
-      
-    >      
-    <span id="aboutme" className={styles.anchor}></span>
-      <h2 className={styles.headeraboutme}>ABOUT ME</h2>
+    <section className={styles.container}>
+      <span className={styles.anchor} id="aboutme"></span>
 
-      <p className={styles.subHeader}></p>
+      <motion.h2
+        id="aboutmeTitle"
+        className={styles.headeraboutme}
+        variants={fadeInDown}
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        ABOUT ME
+      </motion.h2>
 
-      <div className={styles.aboutme}>
-        <div className={styles.card}>
-          <div className={styles.content}>
-            <div className={styles.text}>
-              <p className={styles.cardParagraph}>
-                I am a technology professional focused in healthcare systems
-                integrations, with a primary focus on HL7 FHIR, HL7, and JSON.
-                My experience revolves around the creation and maintenance of
-                both monolithic architectures and microservices to facilitate
-                the exchange of health information between systems.
-              </p>
-
-              <p className={styles.cardParagraph}>
-                I also work with cloud-based solutions, leveraging AWS services
-                to build scalable, secure, and high-availability environments
-                for healthcare applications.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className={styles.card}
+        data-no-glow
+        variants={fadeInUpContainer}
+        initial="initial"
+        whileInView="whileInView"
+        viewport={{ once: true, amount: 0.5 }}
+      >
+        {paragraphs.map((p, i) => (
+          <motion.p key={i} className={styles.cardParagraph} variants={fadeInUpItem}>
+            {p}
+          </motion.p>
+        ))}
+      </motion.div>
     </section>
   );
 }

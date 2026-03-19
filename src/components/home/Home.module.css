@@ -1,0 +1,208 @@
+.container {
+  max-width: 1200px;
+  margin: 5rem auto 10rem auto;
+  padding: 5rem 2rem 2rem 2rem;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.homeContent {
+  flex: 1 1 45%;
+}
+
+.profileImage {
+  flex: 1 1 45%;
+  max-width: 500px;
+}
+
+.profileImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(255, 127, 38);
+}
+
+.job {
+  font-size: 3rem;
+  color: white;
+}
+
+.infoHome p,
+.infoHome a {
+  color: #eee;
+  margin: 0.25rem 0;
+  margin-top: 2rem;
+}
+
+.column {
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.1rem;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn {
+  background-color: #1d4ed8;
+  border: none;
+  height: 4rem;
+  width: 12rem;
+  margin: 0.7rem 0;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.socials a {
+  color: #fff;
+  background-color: #1d4ed8;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  background-color: #1e40af;
+  transition: all 0.3s ease;
+}
+
+.toeic:hover {
+  cursor: pointer;
+  color: rgb(255, 127, 38);
+  transition: all 0.3s ease;
+}
+
+.languageModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #27272a;
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+  width: 300px;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1001;
+}
+
+.languageModal.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.languageModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.languageModalOverlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.languageModalOverlay.hideOverlay {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    padding: 2rem 2rem 2rem 2rem;  
+  }
+
+  .homeContainer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .profileImage {
+    order: -1;
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 1rem; 
+  }
+
+  .homeContent {
+    order: 0;
+    flex: 1 1 100%;
+  }
+
+  .name,
+  .job {
+    font-size: 2rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  .infoHome p,
+  .infoHome a {
+    margin-top: 0.5rem; 
+  }
+
+  .btn {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 0.5rem 0; 
+  }
+
+  .socials a {
+    font-size: 1.25rem;
+    padding: 5px 8px;
+  }
+
+  .languageModal {
+    width: 60%;
+    padding: 1.5rem;
+  }
+
+}
+
