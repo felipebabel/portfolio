@@ -1,14 +1,15 @@
 ## Entry Level Software Engineer - Philips
-**period:** 2022 - currently
+**period:** 2022 - 2026
 **logo:** /assets/images/philips.jpeg
 **logoAlt:** Philips Logo
 
-As a software engineer, I am responsible for maintaining and developing integrations between healthcare systems using HL7, JSON, and HL7 FHIR formats in internal and microservices architectures.
+As a software engineer, I was responsible for maintaining and developing integrations between healthcare systems using HL7 and HL7 FHIR, working within scalable and distributed architectures.
 
 ### Key Highlights
 
-- **Performance Optimization:** Successfully improved product performance by optimizing screen loading time, reducing it by approximately 66%.
-- **Security Implementation:** Played a key role in implementing authentication for the product, addressing essential security needs to protect functionalities and prevent unauthorized third-party access.
+- I worked on improving product performance by optimizing screen loading time, reducing it by approximately 66%.
+- Implemented authentication in the product, an essential security requirement to protect access to functionalities and prevent unauthorized access by third parties.
+- Implemented distributed scheduling strategies using ShedLock and Redis.
 
 ---
 
@@ -17,9 +18,4 @@ As a software engineer, I am responsible for maintaining and developing integrat
 **logo:** /assets/images/philips.jpeg
 **logoAlt:** Philips Logo
 
-As an R&D Software Developer Intern at Philips, I contributed to maintaining healthcare system integrations and implementing continuous improvements within a monolithic architecture, focusing on enhancing system performance and reliability.
-
-### Key Highlights
-
-- **Maintained and Optimized Integrations:** Worked on maintaining and optimizing healthcare system integrations using JSON to ensure seamless data exchange and system interoperability.
-- **System Enhancement and Functionality Improvements:** Analyzed requirements and implemented targeted enhancements to improve system functionality, ensuring better performance and reliability.
+As an R&D Software Developer Intern at Philips, I worked on backend development and healthcare system integrations.
