@@ -68,6 +68,35 @@ export function parseSkills(md) {
 }
 
 /**
+ * Parses home.md into a home data object.
+ */
+export function parseHome(md) {
+  const name = md.match(/^#\s+(.+)/m)?.[1]?.trim() ?? "";
+  const title = extractMeta(md, "title");
+
+  const infoMatch = md.match(/## Info\n([\s\S]*?)(?=\n##|$)/);
+  const info = infoMatch
+    ? infoMatch[1]
+        .split("\n")
+        .filter((l) => l.startsWith("- "))
+        .map((l) => l.replace(/^- /, "").trim())
+    : [];
+
+  const socialsMatch = md.match(/## Socials\n([\s\S]*?)(?=\n##|$)/);
+  const socials = socialsMatch
+    ? socialsMatch[1]
+        .split("\n")
+        .filter((l) => l.startsWith("- "))
+        .map((l) => ({
+          icon: extractInline(l, "icon"),
+          href: extractInline(l, "href"),
+        }))
+    : [];
+
+  return { name, title, info, socials };
+}
+
+/**
  * Parses projects.md into an array of project objects.
  */
 export function parseProjects(md) {
