@@ -1,12 +1,12 @@
-# Felipe Babel
+# Felipe Babel2
 
-**title:** Back-End Software Engineer
+**title:** Back-End Software Engineer2
 
 ## Info
 
-- Bachelor's degree in Information Systems (in progress)
-- 4+ years of professional experience
-- TOEIC English Certificate
+- Bachelor's degree in Information Systems (in progress)2
+- 4+ years of professional experience2
+- TOEIC English Certificate2
 
 ## Socials
 
