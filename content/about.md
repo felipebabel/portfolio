@@ -1,0 +1,1 @@
+Software Engineer with 4+ years of experience in backend development, currently developing ERP systems at Senior Sistemas within fiscal landscape. With experience in microservices, AWS and event-driven architecture. Previously at Philips, where I worked in healthcare systems (HL7/FHIR).
