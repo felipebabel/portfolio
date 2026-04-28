@@ -1,4 +1,4 @@
-## Mid-Level Software Engineer 
+## Software Engineer III
 **period:** 2026 - currently
 **logo:** /assets/images/senior.png
 **logoAlt:** Senior Logo
@@ -7,7 +7,7 @@ As a software engineer, I am responsible for developing ERP systems within the B
 
 ---
 
-## Entry Level Software Engineer - Philips
+## Software Engineer - Philips
 **period:** 2022 - 2026
 **logo:** /assets/images/philips.jpeg
 **logoAlt:** Philips Logo
