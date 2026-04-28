@@ -1,4 +1,4 @@
-## Software Engineer III
+## Software Engineer III - Senior Sistemas
 **period:** 2026 - currently
 **logo:** /assets/images/senior.png
 **logoAlt:** Senior Logo
@@ -22,9 +22,9 @@ As a software engineer, I was responsible for maintaining and developing integra
 
 ---
 
-## R&D Intern - Philips
+## Intern - Philips
 **period:** 2021 - 2022
 **logo:** /assets/images/philips.jpeg
 **logoAlt:** Philips Logo
 
-As an R&D Software Developer Intern at Philips, I worked on backend development and healthcare system integrations.
+As a software engineer intern, I worked on backend development and healthcare integrations.
