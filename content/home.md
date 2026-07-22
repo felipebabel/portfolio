@@ -4,7 +4,7 @@
 
 ## Info
 
-- Bachelor's degree in Information Systems
+- Bachelor's degree in Information Systems (in progress)
 - 4+ years of professional experience
 - TOEIC English Certificate
 
