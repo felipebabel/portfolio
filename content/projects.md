@@ -1,3 +1,3 @@
 ## Health Monitor
-**image:** /assets/projects/login-project.png
+**image:** /assets/projects/healthmonitor.png
 **link:** http://healthmonitor.felipebabel.com/
