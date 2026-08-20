@@ -1,4 +1,4 @@
-# Felipe Babell
+# Felipe Babel
 
 **title:** Back-End Software Engineer
 
