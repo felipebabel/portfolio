@@ -23,7 +23,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    "sync": "bash scripts/sync-gh-pages.sh",
+    "backup": "bash scripts/backup-source.sh",
+    "predeploy": "npm run backup && npm run sync && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

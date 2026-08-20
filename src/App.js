@@ -8,8 +8,6 @@ import Projects from "./components/projects/Projects";
 import Experiences from "./components/experiences/Experiences";
 import Copyright from "./components/copyright/Copyright";
 import Loader from "./components/loader/Loader";
-import MouseGlow from "./components/background/MouseGlow";
-
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "devicon/devicon.min.css";
 import "remixicon/fonts/remixicon.css";
@@ -57,7 +55,6 @@ function App() {
 
   return (
     <>
-      <MouseGlow />
       <Navbar
         menuOpen={menuOpen}
         toggleMenu={toggleMenu}

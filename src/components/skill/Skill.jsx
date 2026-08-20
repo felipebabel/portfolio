@@ -5,7 +5,9 @@ import { parseSkills } from "../../services/parsers";
 import SkillCard from "./SkillCard";
 
 export default function Skill() {
-  const { data: skills } = useMarkdownData("skills", parseSkills, []);
+  const { data: skills, loading } = useMarkdownData("skills", parseSkills, []);
+
+  if (loading || skills.length === 0) return null;
 
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
   const columns = isMobile ? 2 : 4;

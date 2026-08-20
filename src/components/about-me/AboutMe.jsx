@@ -5,7 +5,9 @@ import { useMarkdownData } from "../../hooks/useMarkdownData";
 import { parseAbout } from "../../services/parsers";
 
 export default function AboutMe() {
-  const { data: paragraphs } = useMarkdownData("about", parseAbout, []);
+  const { data: paragraphs, loading } = useMarkdownData("about", parseAbout, []);
+
+  if (loading || paragraphs.length === 0) return null;
 
   return (
     <section className={styles.container}>

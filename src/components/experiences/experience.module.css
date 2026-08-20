@@ -17,7 +17,7 @@
   border: 2px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   max-width: 90rem;
   will-change: transform, opacity;
@@ -78,6 +78,7 @@
   display: flex;
   align-items: flex-start; 
   gap: 1rem;
+  width: 100%;
 }
 @media (max-width: 1400px) {
   .experiences {
