@@ -7,5 +7,8 @@
 - **name:** Docker | **icon:** devicon-docker-plain
 - **name:** Microservice | **icon:** fas fa-cubes
 - **name:** Apache Kafka | **icon:** devicon-apachekafka-original
+- **name:** RabbitMQ | **icon:** devicon-rabbitmq-original
 - **name:** CI | **icon:** fas fa-cogs
+- **name:** PL/SQL | **icon:** fas fa-database
+- **name:** PostgreSQL | **icon:** devicon-postgresql-plain
 - **name:** AWS | **img:** https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg
