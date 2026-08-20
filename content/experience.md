@@ -1,4 +1,4 @@
-## Software Engineer III
+## Mid-Level Software Engineer 
 **period:** 2026 - currently
 **logo:** /assets/images/senior.png
 **logoAlt:** Senior Logo
