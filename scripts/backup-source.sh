@@ -16,6 +16,7 @@ else
 fi
 
 echo "📤 Fazendo push para origin/$BRANCH..."
+git pull origin "$BRANCH" --rebase
 git push origin "$BRANCH"
 
 if [ $? -ne 0 ]; then
