@@ -8,4 +8,4 @@
 - **name:** Microservice | **icon:** fas fa-cubes
 - **name:** Apache Kafka | **icon:** devicon-apachekafka-original
 - **name:** CI | **icon:** fas fa-cogs
-- **name:** AWS | **img:** https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg
+- **name:** AWS | **icon:** devicon-amazonwebservices-plain-wordmark colored
