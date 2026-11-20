@@ -50,10 +50,9 @@
 }
 
 .imgIcon {
-  width: 4rem;       
+  width: 6rem;       
   display: block;
   height: auto;
-  filter: brightness(0) invert(1);
 }
 
 .headerskills {
