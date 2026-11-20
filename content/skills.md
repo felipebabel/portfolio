@@ -10,4 +10,4 @@
 - **name:** RabbitMQ | **icon:** devicon-rabbitmq-original
 - **name:** CI | **icon:** fas fa-cogs
 - **name:** PostgreSQL | **icon:** devicon-postgresql-plain
-- **name:** AWS | **img:** https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg
+- **name:** AWS | **icon:** devicon-amazonwebservices-plain-wordmark colored
